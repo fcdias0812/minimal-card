@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body{
+    /* CORES */
+    --background: #FAFAF9;
+    --background-card: #FFFFFF;
+    --tag: #7C19EE;
+    --background-tag: #F2EAFD;
+    --title: #20293A;
+    --divisor: #E5EAF0;
+    --small-text: #394150;
+
+    font-family: "Sora", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* TIPOGRAFIA */
+.title{
+    font-size: 1.125rem;
+    margin-bottom: 6px;
+    color: var(--title);
+}
+
+.body-text{
+    font-size: 0.875rem;
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+
+.small-text{
+    font-size: 0.75rem;
+    color: var(--small-text);
+}
+
+.tag{
+    font-size: 0.625rem;
+    font-weight: bold;
+    padding: 6px 16px;
+    border-radius: 10px;
+    color: var(--tag);
+    background-color: var(--background-tag);
+    border: none;
+    margin-bottom: 16px;
+}
+
+/* CARD */
+.card{
+    width: 368px;
+    padding: 16px 16px 20px;
+    border-radius: 10px;
+    background-color: var(--background-card);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.img{
+    background-image: url("assets/Cactus.jpg");
+    width: 336px;
+    height: 152px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+.divisor{
+    width: calc(100% + 32px);
+    border: 1px solid var(--divisor);
+    position: relative;
+    left: -16px;
+}
+
+.small-text-container{
+    height: 32px;
+    display: flex;
+    align-items: flex-end;
+}
+
+@media(max-width: 400px){
+    .card{
+        width: 90%;
+    }
+
+    .img{
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
